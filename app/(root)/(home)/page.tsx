@@ -11,6 +11,7 @@ const page = () => {
       </div>
       <SearchForm />
     </section>
+    
     <Filters />
     </main>
       
