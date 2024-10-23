@@ -12,7 +12,7 @@ interface Props {
 }
 
 
-const Page = async () => {
+const Page = async ({ searchParams }: Props) => {
   const resources = await getResources({
     query:'',
     category: '',
