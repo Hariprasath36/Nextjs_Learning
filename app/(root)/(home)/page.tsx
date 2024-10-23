@@ -4,6 +4,9 @@ import React from 'react'
 import { getResources, getResourcesPlaylist } from '@/sanity/actions'
 import ResourceCard from '@/components/ResourceCard'
 
+export const revalidate = 900;
+
+
 const Page = async () => {
   const resources = await getResources({
     query:'',
@@ -34,7 +37,7 @@ const Page = async () => {
                   image={resource.image}
                   downloadNumber={resource.views}
                   downloadLink={resource.downloadLink}
-                  slug={resource.id}
+                 
                 />
               ))
             ): (
